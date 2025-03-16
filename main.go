@@ -30,24 +30,3 @@ func main() {
 		}
 	}
 }
-
-func cleanInput(text string) []string {
-	if len(text) == 0 {
-		return []string{}
-	}
-	var words []string
-	words = strings.Split(strings.TrimSpace(text), " ")
-	return words
-}
-
-func exit() {
-	fmt.Printf("Closing the Pokedex... Goodbye!")
-}
-
-func help() {
-	fmt.Println("Welcome to the Pokedex!\nUsage:\n\nhelp: Displays a help message\nexit: Exit the Pokedex")
-}
-
-func use(cmd string) {
-	fmt.Println(cmd)
-}
